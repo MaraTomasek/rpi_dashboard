@@ -39,7 +39,7 @@ sed -i "s/\(m[ ]*\)\([A-Z][a-zA-Z, ]*$\)/\1$WEATHER_TEXT/g;" /home/smb/rpi_dashb
 # --- Safety Buffer --- #
 
 # Only overwrite stored weather if curl requests succeeded
-if [ -s /home/smb/rpi_dashboard/fetched_weather_today_trimmed ]; then
+if [ -s /home/smb/rpi_dashboard/fetched_weather_today ]; then
     cp /home/smb/rpi_dashboard/fetched_weather_today /home/smb/rpi_dashboard/display_weather_today
 fi
 
