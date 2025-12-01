@@ -33,7 +33,7 @@ WEATHER_TEXT=$(cat /home/smb/rpi_dashboard/fetched_weather_today | sed 's@^.*\([
 WEATHER_TEXT=$(pad "$WEATHER_TEXT" -15)
 
 # Trim and pad the first line of todays weather text in place
-sed -i "s/\(m[ ]*\)\([A-Z][a-zA-Z, ]*$\)/\1$WEATHER_TEXT/g; 1 q" /home/smb/rpi_dashboard/fetched_weather_today
+sed -i "s/\(m[ ]*\)\([A-Z][a-zA-Z, ]*$\)/\1$WEATHER_TEXT/g;" /home/smb/rpi_dashboard/fetched_weather_today
 
 
 # --- Safety Buffer --- #
