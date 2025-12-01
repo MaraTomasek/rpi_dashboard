@@ -26,11 +26,8 @@ pad () {
     [ "$#" -gt 1 ] && [ -n "$2" ] && printf "%$2.${2#-}s" "$1" && printf "\n";
 }
 
-# Get and trim the first line of todays weather text, if it is too long
-WEATHER_TEXT=$(cat /home/smb/rpi_dashboard/fetched_weather_today | sed 's@^.*\([A-Z][a-zA-Z, ]\{13\}\).*$@\1@g; 1 q')
-
-# Pad it back up to 15, if it was too short to begin with
-WEATHER_TEXT=$(pad "$WEATHER_TEXT" -15)
+# Get and set width of the first line of todays weather text
+WEATHER_TEXT=$(pad "$(cat /home/smb/rpi_dashboard/euntouched | sed 's/^[^A-Z]*\([A-Z][a-zA-Z \,]\+\)/\1/g; 1 q')" -15)
 
 # Trim and pad the first line of todays weather text in place
 sed -i "s/\(m[ ]*\)\([A-Z][a-zA-Z, ]*$\)/\1$WEATHER_TEXT/g;" /home/smb/rpi_dashboard/fetched_weather_today
