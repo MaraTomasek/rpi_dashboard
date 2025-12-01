@@ -27,7 +27,7 @@ pad () {
 }
 
 # Get and set width of the first line of todays weather text
-WEATHER_TEXT=$(pad "$(cat /home/smb/rpi_dashboard/euntouched | sed 's/^[^A-Z]*\([A-Z][a-zA-Z \,]\+\)/\1/g; 1 q')" -15)
+WEATHER_TEXT=$(pad "$(cat /home/smb/rpi_dashboard/fetched_weather_today | sed 's/^[^A-Z]*\([A-Z][a-zA-Z \,]\+\)/\1/g; 1 q')" -15)
 
 # Trim and pad the first line of todays weather text in place
 sed -i "s/\([^A-Z]*\)\([A-Z][a-zA-Z, ]*$\)/\1$WEATHER_TEXT/g;" /home/smb/rpi_dashboard/fetched_weather_today
