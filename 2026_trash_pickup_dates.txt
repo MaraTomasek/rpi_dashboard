@@ -1,0 +1,72 @@
+02.01.2026,Altpapier
+05.01.2026,Bioabfall & Gelber Sack
+07.01.2026,Restm�ll
+19.01.2026,Bioabfall
+20.01.2026,Restm�ll
+28.01.2026,Altpapier
+02.02.2026,Bioabfall & Gelber Sack
+03.02.2026,Restm�ll
+16.02.2026,Bioabfall & Gelber Sack
+17.02.2026,Restm�ll
+25.02.2026,Altpapier
+02.03.2026,Bioabfall & Gelber Sack
+03.03.2026,Restm�ll
+16.03.2026,Bioabfall & Gelber Sack
+17.03.2026,Restm�ll
+25.03.2026,Altpapier
+30.03.2026,Bioabfall & Gelber Sack
+31.03.2026,Restm�ll
+13.04.2026,Bioabfall & Gelber Sack
+14.04.2026,Restm�ll
+22.04.2026,Altpapier
+27.04.2026,Bioabfall & Gelber Sack
+28.04.2026,Restm�ll
+11.05.2026,Bioabfall & Gelber Sack
+12.05.2026,Restm�ll
+20.05.2026,Altpapier
+26.05.2026,Bioabfall & Gelber Sack
+27.05.2026,Restm�ll
+08.06.2026,Bioabfall & Gelber Sack
+09.06.2026,Restm�ll
+15.06.2026,Bioabfall
+17.06.2026,Altpapier
+22.06.2026,Bioabfall & Gelber Sack
+23.06.2026,Restm�ll
+29.06.2026,Bioabfall
+06.07.2026,Bioabfall & Gelber Sack
+07.07.2026,Restm�ll
+13.07.2026,Bioabfall
+15.07.2026,Altpapier
+20.07.2026,Bioabfall & Gelber Sack
+21.07.2026,Restm�ll
+27.07.2026,Bioabfall
+03.08.2026,Bioabfall & Gelber Sack
+04.08.2026,Restm�ll
+10.08.2026,Bioabfall
+12.08.2026,Altpapier
+17.08.2026,Bioabfall & Gelber Sack
+18.08.2026,Restm�ll
+24.08.2026,Bioabfall
+31.08.2026,Bioabfall & Gelber Sack
+01.09.2026,Restm�ll
+07.09.2026,Bioabfall
+09.09.2026,Altpapier
+14.09.2026,Bioabfall & Gelber Sack
+15.09.2026,Restm�ll
+28.09.2026,Bioabfall & Gelber Sack
+29.09.2026,Restm�ll
+07.10.2026,Altpapier
+12.10.2026,Bioabfall & Gelber Sack
+13.10.2026,Restm�ll
+26.10.2026,Bioabfall & Gelber Sack
+27.10.2026,Restm�ll
+04.11.2026,Altpapier
+09.11.2026,Bioabfall & Gelber Sack
+10.11.2026,Restm�ll
+23.11.2026,Bioabfall & Gelber Sack
+24.11.2026,Restm�ll
+02.12.2026,Altpapier
+07.12.2026,Bioabfall & Gelber Sack
+08.12.2026,Restm�ll
+19.12.2026,Bioabfall & Gelber Sack
+21.12.2026,Restm�ll

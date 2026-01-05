@@ -1,0 +1,12 @@
+Kalenderwochen in denen wir Kehrwoche haben
+---
+4,Kehrwoche
+9,Kehrwoche
+14,Kehrwoche
+19,Kehrwoche
+24,Kehrwoche
+29,Kehrwoche
+34,Kehrwoche
+39,Kehrwoche
+44,Kehrwoche
+49,Kehrwoche

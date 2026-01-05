@@ -75,7 +75,17 @@ display_network_statistics() {
 
 display_uptime() {
     # Justified to the bottom right corner
-    printf "%60s\n" "$(uptime -p)"
+    printf "%60s" "$(uptime -p)"
+}
+
+display_kehrwoche() {
+    KEHRWOCHE=$(grep -w $(date +%-V) /home/smb/rpi_dashboard/2026_kehrwochen.txt | awk 'BEGIN { FS = "," } ; {print $2}')
+    echo "$KKEHRWOCHE"
+}
+
+display_trash_pickup(){
+    TRASH=$(grep display_date_tomorrow /home/smb/rpi_dashboard/2026_trash_pickup_dates.txt | awk 'BEGIN { FS = "," } ; {print $2}')
+    echo "$TRASH"
 }
 
 # Decoupled from display_network_statistics because it takes a second to calculate and i don't want the refresh to stutter on this line
@@ -106,18 +116,18 @@ while true; do
     display_weather
         line_break
     display_time
+    display_kehrwoche
+    display_trash_pickup
+        line_break
+        line_break
     display_system_info_header
-        line_break
-        line_break
-    display_cpu_and_memory_usage
-        line_break
+    #display_cpu_and_memory_usage
+    #    line_break
         line_break
     display_disk_space
         line_break
         line_break
     display_network_statistics
-        line_break
-        line_break
         line_break
         line_break
     display_uptime
