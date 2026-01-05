@@ -49,7 +49,7 @@ display_cpu_and_memory_usage() {
 
 display_disk_space() {
     DISK_SPACE=$(df -h \
-        | awk '$1 == "/dev/mmcblk0p2" {print $1"\t"int($2)-int($3)" GB frei"}')
+        | awk '$1 == "/dev/mmcblk0p2" {print $1"\t"int($4)" GB frei"}')
 
     DISK_SPEED=$(iostat -dk \
         | grep mmcblk0 \
