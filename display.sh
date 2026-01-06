@@ -80,7 +80,7 @@ display_uptime() {
 
 display_kehrwoche() {
     KEHRWOCHE=$(grep -w $(date +%-V) /home/smb/rpi_dashboard/2026_kehrwochen.txt | awk 'BEGIN { FS = "," } ; {print $2}')
-    echo "$KKEHRWOCHE"
+    echo "$KEHRWOCHE"
 }
 
 display_trash_pickup(){
