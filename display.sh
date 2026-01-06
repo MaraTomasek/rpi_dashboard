@@ -84,7 +84,7 @@ display_kehrwoche() {
 }
 
 display_trash_pickup(){
-    TRASH=$(grep display_date_tomorrow /home/smb/rpi_dashboard/2026_trash_pickup_dates.txt | awk 'BEGIN { FS = "," } ; {print $2}')
+    TRASH=$(grep --date="tomorrow" $(date +%d.%m.%Y) /home/smb/rpi_dashboard/2026_trash_pickup_dates.txt | awk 'BEGIN { FS = "," } ; {print $2}')
     echo "$TRASH"
 }
 
