@@ -121,8 +121,7 @@ while true; do
         line_break
         line_break
     display_system_info_header
-    #display_cpu_and_memory_usage
-    #    line_break
+        line_break
         line_break
     display_disk_space
         line_break
