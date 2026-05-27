@@ -6,12 +6,12 @@
 # --- Fetching --- #
 
 # Fetch todays weather
-curl de.wttr.in/Tuebingen?0Q \
+curl de.wttr.is/Tuebingen?0Q \
     | cut -c 3- \
     > /home/smb/rpi_dashboard/fetched_weather_today;
 
 # Fetch tomorrows weather and remove trailing spaces (in order to prevent line wrapping on the display)
-curl de.wttr.in/Tuebingen@$(date --date='tomorrow' +%F)?0Q \
+curl de.wttr.is/Tuebingen@$(date --date='tomorrow' +%F)?0Q \
     | cut -c 3- \
     | sed -e 's/[[:space:]]*$//' \
     > /home/smb/rpi_dashboard/fetched_weather_tomorrow;
@@ -32,6 +32,8 @@ WEATHER_TEXT=$(pad "$(cat /home/smb/rpi_dashboard/fetched_weather_today | sed 's
 # Trim and pad the first line of todays weather text in place
 sed -i "s/\([^A-Z]*\)\([A-Z][a-zA-Z, ]*$\)/\1$WEATHER_TEXT/g;" /home/smb/rpi_dashboard/fetched_weather_today
 
+# Add a tab at the end of every line in todays weather
+sed -e $'3,$s/$/\t/' -i /home/smb/rpi_dashboard/fetched_weather_today
 
 # --- Safety Buffer --- #
 
