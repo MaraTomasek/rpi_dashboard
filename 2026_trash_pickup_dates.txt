@@ -1,7 +1,7 @@
 02.01.2026,Altpapier
 05.01.2026,Bioabfall & Gelber Sack
 07.01.2026,Restmuell
-19.01.2026,Bioabfall
+19.01.2026,Bioabfall & Gelber Sack
 20.01.2026,Restmuell
 28.01.2026,Altpapier
 02.02.2026,Bioabfall & Gelber Sack
